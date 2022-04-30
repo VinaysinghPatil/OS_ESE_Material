@@ -1,0 +1,67 @@
+
+The pointer entry in the file descriptor array entry points to the data of the file directly: No
+
+There is only one global file structure per on-disk file: No No synchronization is implemented so that changes are made available immediately: No
+
+The 'file offset' is shared among all the processes that access the file.: No
+
+All file structures representing any open file, give access to the
+
+same in-memory copy of the file's contents: Yes The file descriptors in every PCB are pointers to the same global
+
+file structure: No
+
+
+--------------------------------------
+
+
+The correct answer is 
+ext4- extent allocation, journalled, 
+ext3- Journailed, block allocation 
+ext2- block allocation
+
+--------------------------------------------------
+
+The correct answer is:
+ void panic(char*s)
+
+panicked = 1; Ensure that no printing happens on other
+
+processors, void
+
+acquire(struct spinlock *Ik)
+
+getcallerpcs(&lk, Ik->pcs); → Traverse ebp chain to get sequence of instructions followed in functions calls, void yield(void)
+
+release(&ptable.lock);
+
+}-Release the lock held by some another process
+
+
+-----------------------------------------------
+
+A process in RUNNING state only can become TERMINATED because it needs to execute exit() system call in RUNNING state: True 
+A process in READY state can not go to WAITING state because the condition for WAIT has to be executed while process is in
+RUNNING state.: True
+
+
+
+
+
+
+
+
+https://github.com/chaitanya0208/os
+
+A process in WAITING state can not become RUNNING because
+
+it will result in loss of performance: False 
+If parent dies before child, then the ZOMBIE child is typically cleaned up by 'init' process.: True 
+A READY process may become RUNNING either when scheduler selects it or an interrupt that it was WAITING for occurs: False
+
+------------------------------------------
+
+
+
+You have correctly selected 3 The correct answer is: This tool is simply a queue protected by a spinlock condition variables. A downgrade/upgrade is possible with this tool read-write lock, Nothing is possible without the atomuc instructions in hardware, This tool can used for mutual exclusion as well as for access to countable resources. semaphore. Do not block holding this tool-spinlock
+
